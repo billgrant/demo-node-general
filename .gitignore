@@ -1,0 +1,14 @@
+# Credentials: never commit. The pull token lives in .npmrc.
+# Show cg-libs/npmrc.example on screen instead.
+.npmrc
+.netrc
+*.token
+.env
+
+# Dependencies: recreated by npm ci
+node_modules/
+
+# Local noise
+.DS_Store
+npm-debug.log*
+*.log

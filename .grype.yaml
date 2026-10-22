@@ -1,0 +1,6 @@
+# Same as the Python demo: ignore matches from grype's binary cataloger.
+# It fingerprints raw executables (like the node binary) and double-counts
+# CVEs that are already reported through the OS package manager.
+ignore:
+  - package:
+      type: binary

@@ -1,0 +1,3 @@
+registry=https://libraries.cgr.dev/javascript/
+//libraries.cgr.dev/javascript/:_auth=<pulltoken>
+//libraries.cgr.dev/javascript-upstream/:_auth=<pulltoken>

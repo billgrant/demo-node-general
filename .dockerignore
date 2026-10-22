@@ -1,0 +1,14 @@
+# Keep secrets and local junk out of the Docker build context.
+# .npmrc reaches the build only through a --secret mount, never COPY.
+# Docker matches patterns from the context root only, so **/ is needed
+# to catch copies in subfolders (e.g. cg-libs/.npmrc).
+.npmrc
+**/.npmrc
+.netrc
+**/.netrc
+.env
+node_modules/
+**/node_modules/
+.git/
+scans/
+*.log
