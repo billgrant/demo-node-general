@@ -12,4 +12,4 @@ echo "Paused — press Enter to scan with grype"
 read -r
 set -x
 
-grype --by-cve demo-node:public
+CLICOLOR_FORCE=1 grype --by-cve demo-node:public | head -30
