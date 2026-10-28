@@ -20,7 +20,7 @@ if docker build --progress=plain \
   exit 1
 fi
 { set +x; } 2>/dev/null
-echo ">>> Blocked by Chainguard Libraries: tensorlake never downloaded, nothing executed."
+echo -e "\033[0;31m>>> Blocked by Chainguard Libraries: tensorlake never downloaded, nothing executed.\033[0m"
 echo "Paused — press Enter for the clean build"
 read -r
 set -x
